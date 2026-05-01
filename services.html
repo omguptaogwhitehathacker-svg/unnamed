@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Services — unnamed</title>
+<meta name="description" content="Services and an instant estimate calculator from $50 to $200." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html">unnamed<span>.</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-head reveal">
+    <p class="kicker">services</p>
+    <h1>What we make.</h1>
+    <p class="lead">Small, sharp engagements. Pick the parts you need.</p>
+  </section>
+
+  <section class="grid-3">
+    <div class="card reveal"><h3>Landing page</h3><p>One-page sites that convert. Copy polish, design, build.</p></div>
+    <div class="card reveal"><h3>Brand site</h3><p>Multi-page identity sites with a consistent visual system.</p></div>
+    <div class="card reveal"><h3>Web app MVP</h3><p>Light interactive products to validate your idea fast.</p></div>
+    <div class="card reveal"><h3>Redesign</h3><p>Refresh an existing site without breaking what works.</p></div>
+    <div class="card reveal"><h3>SEO &amp; speed</h3><p>Audit, optimize, ship. Make Google — and humans — happy.</p></div>
+    <div class="card reveal"><h3>Maintenance</h3><p>Ongoing care: tweaks, content updates, peace of mind.</p></div>
+  </section>
+
+  <section class="estimator reveal" id="estimate">
+    <div class="est-head">
+      <p class="kicker">instant estimate</p>
+      <h2>Build your quote.</h2>
+      <p class="muted">Starts at <strong>$50</strong>, capped at <strong>$200</strong>. No surprises.</p>
+    </div>
+
+    <div class="est-grid">
+      <div class="est-controls">
+        <label class="field">
+          <span>Project type</span>
+          <select id="type">
+            <option value="0">Single landing page (+$0)</option>
+            <option value="40">Brand site, 3–5 pages (+$40)</option>
+            <option value="80">Small web app (+$80)</option>
+            <option value="30">Redesign of existing site (+$30)</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Pages: <output id="pagesOut">1</output></span>
+          <input type="range" id="pages" min="1" max="10" value="1" />
+        </label>
+
+        <label class="field">
+          <span>Timeline</span>
+          <select id="timeline">
+            <option value="0">Flexible (+$0)</option>
+            <option value="20">2–4 weeks (+$20)</option>
+            <option value="50">Rush, &lt; 1 week (+$50)</option>
+          </select>
+        </label>
+
+        <fieldset class="addons">
+          <legend>Add-ons</legend>
+          <label><input type="checkbox" value="15" data-addon> Custom illustrations <em>+$15</em></label>
+          <label><input type="checkbox" value="20" data-addon> SEO setup <em>+$20</em></label>
+          <label><input type="checkbox" value="15" data-addon> Contact form &amp; email <em>+$15</em></label>
+          <label><input type="checkbox" value="25" data-addon> Animations &amp; interactions <em>+$25</em></label>
+          <label><input type="checkbox" value="10" data-addon> Analytics setup <em>+$10</em></label>
+        </fieldset>
+      </div>
+
+      <aside class="est-result">
+        <p class="muted small">Estimated total</p>
+        <div class="price"><span class="currency">$</span><span id="total" color="black">50</span></div>
+        <div class="bar"><div class="bar-fill" id="bar"></div></div>
+        <p class="muted small" id="capNote">Within range.</p>
+        <a id="estCta" class="btn primary block" href="contact.html">Continue with this estimate →</a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="yr"></span> unnamed</span>
+  <a href="mailto:theunnamedproject@proton.me">theunnamedproject@proton.me</a>
+</footer>
+
+<script src="main.js"></script>
+<script src="estimate.js"></script>
+</body>
+</html>

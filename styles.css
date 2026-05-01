@@ -114,7 +114,7 @@ h1{font-size:clamp(44px,7vw,84px);line-height:1.02;letter-spacing:-.03em;margin:
 .est-result{position:sticky;top:90px;align-self:start;border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff;text-align:center;box-shadow:0 14px 36px -22px rgba(26,21,48,.25)}
 .price{font-size:64px;letter-spacing:-.04em;font-weight:700;margin:6px 0 14px;display:flex;justify-content:center;align-items:flex-start;gap:2px}
 .price .currency{font-size:24px;color:var(--muted);margin-top:14px}
-#total{transition:transform .25s var(--ease);display:inline-block}
+#total{transition:transform .25s var(--ease);display:inline-block;color:black}
 .bar{height:6px;background:rgba(26,21,48,.08);border-radius:99px;overflow:hidden;margin:6px 0 12px}
 .bar-fill{height:100%;width:0;background:var(--grad-bar);transition:width .4s var(--ease)}
 .price{background:var(--grad-hero);-webkit-background-clip:text;background-clip:text;color:transparent}
